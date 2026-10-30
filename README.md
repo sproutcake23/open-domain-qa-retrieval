@@ -94,7 +94,7 @@ src/
   qa_reader.py             extractive reader over the retrieved passages
   evaluator.py             Recall@k, Precision@k, MRR
   utils.py                 top-k selection, RRF, plots
-streamlit/                 demo app: compare retrievers on a question, live
+streamlit/                 demo app: compare retrievers on a question, live (small demo corpus)
 tests/                     unit tests
 results/metrics.json       numbers from the run above
 ```

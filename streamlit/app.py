@@ -280,7 +280,7 @@ def main():
         # Get ground truth for evaluation (if available)
         ground_truth = GROUND_TRUTH.get(query, [])
         if ground_truth:
-            st.info(f"📊 Ground Truth: Documents {[i+1 for i in ground_truth]} are most relevant for this query")
+            st.info(f"📊 Ground Truth: Documents {ground_truth} are most relevant for this query")
         else:
             st.info("📊 No predefined ground truth for this query - answers come from whatever documents are retrieved")
         
