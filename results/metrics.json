@@ -1,0 +1,98 @@
+{
+  "corpus_size": 104201,
+  "num_questions": 3452,
+  "retrieval": {
+    "BM25": {
+      "Recall@1": 0.2991985322518347,
+      "Recall@5": 0.49674101969872536,
+      "Recall@10": 0.5585650830436462,
+      "Precision@5": 0.11848203939745074,
+      "MRR": 0.4266317653163772
+    },
+    "Word2Vec": {
+      "Recall@1": 0.26706740054074934,
+      "Recall@5": 0.49514774044032445,
+      "Recall@10": 0.5839368482039398,
+      "Precision@5": 0.11813441483198145,
+      "MRR": 0.40650376888132456
+    },
+    "MiniLM-L6-v2": {
+      "Recall@1": 0.5603032058709926,
+      "Recall@5": 0.7925598686751643,
+      "Recall@10": 0.8484212050984936,
+      "Precision@5": 0.19055619930475085,
+      "MRR": 0.7187741445657057
+    },
+    "MPNet-base": {
+      "Recall@1": 0.625555233680958,
+      "Recall@5": 0.853828698339127,
+      "Recall@10": 0.8906431054461182,
+      "Precision@5": 0.20585168018539982,
+      "MRR": 0.780563364008327
+    },
+    "BGE-small-v1.5": {
+      "Recall@1": 0.5972383159521052,
+      "Recall@5": 0.8230252993433758,
+      "Recall@10": 0.8663576670529162,
+      "Precision@5": 0.19785631517960603,
+      "MRR": 0.7507362818566738
+    },
+    "Qwen3-Embedding-0.6B": {
+      "Recall@1": 0.6092603321745849,
+      "Recall@5": 0.840454808806489,
+      "Recall@10": 0.8806971803785245,
+      "Precision@5": 0.20237543453070683,
+      "MRR": 0.7670231983385798
+    },
+    "EmbeddingGemma-300M": {
+      "Recall@1": 0.6951767091541136,
+      "Recall@5": 0.8983198146002318,
+      "Recall@10": 0.9257193897257627,
+      "Precision@5": 0.21726535341830822,
+      "MRR": 0.8412682474008367
+    },
+    "Hybrid (BM25 + EmbeddingGemma-300M)": {
+      "Recall@1": 0.436558516801854,
+      "Recall@5": 0.8038576670529163,
+      "Recall@10": 0.9047894940131326,
+      "Precision@5": 0.191135573580533,
+      "MRR": 0.6416040469526424
+    }
+  },
+  "transformer_stats": {
+    "MiniLM-L6-v2": {
+      "index_time_s": 171.08830308914185,
+      "query_time_s": 4.828645706176758,
+      "embedding_dim": 384
+    },
+    "MPNet-base": {
+      "index_time_s": 1141.6313264369965,
+      "query_time_s": 9.864748001098633,
+      "embedding_dim": 768
+    },
+    "BGE-small-v1.5": {
+      "index_time_s": 333.0656042098999,
+      "query_time_s": 5.775481462478638,
+      "embedding_dim": 384
+    },
+    "Qwen3-Embedding-0.6B": {
+      "index_time_s": 1765.1409616470337,
+      "query_time_s": 20.149930715560913,
+      "embedding_dim": 1024
+    },
+    "EmbeddingGemma-300M": {
+      "index_time_s": 1723.28861951828,
+      "query_time_s": 14.43843698501587,
+      "embedding_dim": 768
+    }
+  },
+  "best_retriever": "EmbeddingGemma-300M",
+  "hybrid": "Hybrid (BM25 + EmbeddingGemma-300M)",
+  "skipped_models": {},
+  "qa": {
+    "gold_source_rate": 0.458,
+    "retrieval_hit_rate": 0.922,
+    "mean_score": 0.45497146523245463,
+    "num_questions": 500
+  }
+}
